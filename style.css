@@ -249,13 +249,13 @@ body::before {
 
 .github-btn {
     position: fixed;
-    top: 35px;
+    top: 28px;
     right: 70px;
     display: flex;
     align-items: center;
     gap: 10px;
     background: rgba(255, 255, 255, 0.08);
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
