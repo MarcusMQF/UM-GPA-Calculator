@@ -8,7 +8,7 @@ body {
     position: relative;
     overflow: hidden;
     perspective: 1000px;
-    cursor: url('./images/yx.png') 16 16, auto;
+    cursor: url('./yx.png') 16 16, auto;
 }
 
 body::before {
@@ -97,7 +97,7 @@ body::before {
 .custom-cursor {
     width: 40px;  /* Adjust based on your image size */
     height: 40px; /* Adjust based on your image size */
-    background-image: url('./images/yx.png');
+    background-image: url('./yx.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: fixed;
