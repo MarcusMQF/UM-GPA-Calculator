@@ -1,7 +1,5 @@
 # 🧮 GPA Calculator
 
-## Description
-
 This is a simple GPA calculator that allows you to calculate your GPA based on the credits and grades of your courses. A sleek, modern GPA calculator with a responsive design and interactive UI elements.
 
 ![GPA Calculator](demo.png)
