@@ -8,7 +8,7 @@ body {
     position: relative;
     overflow: hidden;
     perspective: 1000px;
-    cursor: url('./yx.png') 16 16, auto;
+    cursor: url('yx.png') 16 16, auto;
 }
 
 body::before {
@@ -97,7 +97,7 @@ body::before {
 .custom-cursor {
     width: 40px;  /* Adjust based on your image size */
     height: 40px; /* Adjust based on your image size */
-    background-image: url('./yx.png');
+    background-image: url('yx.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: fixed;
@@ -108,7 +108,7 @@ body::before {
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('./Modern Age.ttf') format('truetype');
+    src: url('Modern Age.ttf') format('truetype');
 }
 
 .header {
