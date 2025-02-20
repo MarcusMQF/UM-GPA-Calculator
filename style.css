@@ -470,3 +470,14 @@ body::before {
 .reset-btn:active {
     background: rgba(255, 255, 255, 0.25);
 }
+
+.credit-input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.credit-input::-webkit-inner-spin-button, 
+.credit-input::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}

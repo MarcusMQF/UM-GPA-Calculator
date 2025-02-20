@@ -66,6 +66,12 @@ function validateInputs() {
         
         if (creditValue || gradeValue) {
             hasFilledPair = true;
+            
+            // Check for negative or decimal values
+            if (creditValue && (creditValue < 0 || !Number.isInteger(parseFloat(creditValue)))) {
+                showError('Credits must be positive whole numbers');
+                return false;
+            }
         }
 
         if ((creditValue && !gradeValue) || (!creditValue && gradeValue)) {
@@ -99,14 +105,15 @@ function calculateGPA() {
         const gradeValue = parseFloat(gradeSelects[i].value);
         
         if (!isNaN(creditValue) && !isNaN(gradeValue)) {
-            totalCredits += creditValue;
-            totalGradePoints += (creditValue * gradeValue);
+            totalCredits += Math.round(creditValue); // Ensure whole numbers
+            totalGradePoints += (Math.round(creditValue) * gradeValue);
         }
     }
     
+    // Format numbers to prevent excessive decimals
     const gpa = totalCredits > 0 ? (totalGradePoints / totalCredits).toFixed(2) : "0.00";
     
-    document.getElementById('total-credits').textContent = totalCredits;
+    document.getElementById('total-credits').textContent = totalCredits.toString();
     document.getElementById('gpa-result').textContent = gpa;
     document.getElementById('grade-points').textContent = totalGradePoints.toFixed(2);
 }
